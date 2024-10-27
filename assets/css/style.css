@@ -1,0 +1,342 @@
+/* @media (min-width: 768px) {
+    .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+    } */
+
+    
+    
+
+    
+    * {
+        text-decoration: none !important
+    }
+
+    .header {
+        padding: 20px
+    }
+
+    .header nav a {
+        color: #fff;
+        
+    }
+
+    .header button {
+
+        background-color: #3A68B8;
+        color:#fff;
+        padding:15px 30px; 
+        border-color:transparent;
+        border-radius:5px;
+        display: none;
+    } 
+
+    .sign-in {
+        background-color: #3A68B8;
+        color: #fff;
+        display: block;
+        width: 100px;
+        height: 50px;
+       
+    }
+
+
+    
+
+    .mobile-menyu {
+        /* Positions - top left right bottom */
+        /* position static - arxada olan kod - dayanib yerinde */
+        /* positio: relative - elementin yerin deyishir */
+        /* positio: absolute - elementi qabaga cixarir - sehifeni asagi-yuxari edende sehifeye yapishir hereket etmir*/
+        /* positio: fixed - elementin yerin deyishir - burda ise yapishmir sehife ile birlikde yerin deyishir */
+        position: fixed;
+        top: 0px;
+        /* right: 0 */
+        /* bottom: 0 */
+
+        left: 0px;
+        background-color: rgba(0,0,0, 0.6);
+        width: 0%;
+        height: 100vh;
+        overflow-x: hidden;
+        transition: width 1.2s ease;
+    }
+
+    /* javascript vasitesile */ 
+    /* child selector */
+    .mobile-menyu.aktiv {
+           width: 100%;
+    }
+
+
+
+    .fa-circle-xmark {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 29px;
+        color: #ccc;
+    }
+
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+
+    .mobile-nav-links a {
+        color: #ccc;
+        font-size: 28px;
+    }
+
+    .mobile-nav-links a:hover .fa-circle-xmark:hover {
+        color: #fff;
+    }
+
+    .arxasi-solgun-reng {
+        position: fixed;
+        z-index: 9999;
+        background-color: rgba(0,0,0, .6);
+        height: 100vh;
+        width: 0;
+        overflow-x:hidden;
+    }
+
+    .arxasi-solgun-reng.aktiv {
+        width: 100%;
+    }
+
+    
+
+    .modal-boxes {
+        width: 300px;
+        background-color: #fff;
+        padding: 10px;
+        height: 200px;
+        position: absolute;
+        border-radius: 3px;
+        box-shadow: 10px 10px 30px rgba(255,255,255, .6);
+        top: 30%;
+        left: 10%;
+        transform: translate (-30%, -30%);
+        
+
+
+    }
+
+    .modal-boxes iframe {
+        margin-top: 40px;
+    }
+
+    .modal-boxes .fa-xmark {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 15px;
+        z-index: 9999;
+    }
+
+    /* introduction start */ 
+
+    .introduction {
+        background-color: #000;
+    }
+
+    .intro-left-side h2 {
+        /* 1 rem 16px */
+        font-size: 2.1rem;
+        margin: 20px 0;
+    }
+
+    .next-generation-text {
+        color: #3a68b8
+    }
+
+    .playicon {
+        width: 12px;
+        margin-right: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .buttons button {
+
+        background-color: #3A68B8;
+        color:#fff;
+        width: 140px;
+        height: 60px; 
+        border-color:transparent;
+        border-radius:5px;
+        padding: 10px;
+        
+    } 
+
+    .buttons button:nth-child(2) {
+        display: flex;
+        align-items: center;
+
+    }
+
+    /* introduction end */
+
+
+    .shirketlerKaruseli img {
+        width: 200px;
+        height: 59px;
+
+    }
+
+    .awardsSwiper .swiper-slide img {
+        width: 73px;
+        height: 69px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .swiper-slide .card {
+        background-color: #0f1624;
+        color: #fff;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #2C3647;
+        ;
+    }
+
+    .card-text {
+        color:#ccc;
+        font-size: 14px; 
+    }
+
+    .ac {
+       background-color: transparent; 
+       color:#fff;
+       border: none;
+       
+    }
+
+    .ac-header button {
+        color:#fff !important;
+        font-size: 20px !important;
+    }
+
+    .ac-text {
+        color:#ccc !important; 
+        text-align: left;
+    }
+
+    .learn-more {
+        background-color: #3A68B8;
+        width: 100px;
+        height: 50px;
+        color:#fff;
+        border: none;
+    }
+
+    .footer-center-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .footer-center-links a {
+        margin: 10px 0;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    
+    select {
+        margin-top: 40px;
+    }
+    
+    .footer-center h5 {
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+    @media (min-width: 768px) {
+        .header nav{
+            display: flex;
+            gap: 20px
+        }
+
+    .introduction .intro-left-side {
+            padding: 60px 0;
+        }
+
+        .intro-left-side h2 {
+            /* 1 rem 16px */
+            font-size: 3.6rem;
+        }
+
+        .sign-in {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+
+        .apply-ai-text {
+            font-size: 40px;
+        }
+
+        .modal-boxes {
+            width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            height: 350px;
+            position: absolute;
+            border-radius: 4px;
+            box-shadow: 10px 10px 30px rgba(255,255,255, .6);
+            top: 50%;
+            left: 50%;
+            transform: translate (-50%, -50%);
+    
+        }
+
+        .modal-boxes iframe {
+            margin-top: 40px;
+            height: 250px;
+        }
+
+        .modal-boxes .fa-xmark {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 20px;
+            z-index: 9999;
+        }
+    
+
+        .footer-center h5 {
+            margin-top: 0;
+        }
+
+    }
+
+    @media(min-width:991px) {
+
+        .intro-left-side h2 {
+            /* 1 rem 16px */
+            font-size: 3.6rem;
+        }
+    }
+    
