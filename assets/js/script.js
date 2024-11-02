@@ -233,6 +233,10 @@ getStartedButtonu.addEventListener("click", function(){
 
 })
 
+// AOS script
+
+AOS.init();
+
 
 
 
